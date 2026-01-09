@@ -19,5 +19,5 @@ def get_data_from_api():
 
 
 if __name__ == "__main__":
-    get_data_from_api()
+    print(get_data_from_api())
     
