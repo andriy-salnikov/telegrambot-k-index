@@ -6,7 +6,7 @@ def get_data_from_api():
     url = "https://services.swpc.noaa.gov/products/noaa-planetary-k-index-forecast.json"
     response = requests.get(url)
     json = response.json()
-    three_days_ago = (datetime.now() - timedelta(days=3)).strftime('%Y-%m-%d')
+    three_days_ago = (datetime.now() - timedelta(days=3)).strftime("%Y-%m-%d")
     data = {}
     for entry in json[1:]:
         date = entry[0][:10]
