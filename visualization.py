@@ -22,6 +22,8 @@ def make_diagram(data: dict):
     # adding labels and title
     ax.set_xlabel("K-index")
     ax.set_title("Magnetic activity forecast")
+
+    return fig
          
 
 if __name__ == "__main__":
